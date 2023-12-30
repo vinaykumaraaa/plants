@@ -1,0 +1,23 @@
+.col {
+    width: 20%;
+  }
+
+  .col1 {
+    width: 25%;
+  }
+
+  .offer {
+    text-align: center;
+    
+  }
+  .button{
+    width: 200px;
+    background-color: rgb(226, 98, 98);
+    border: 2px solid rgb(40, 39, 39);
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 20px;
+  }
+  img{
+    width: 20%;
+  }

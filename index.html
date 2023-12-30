@@ -1,0 +1,782 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.118.2">
+   
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+<link href="bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      /*  */
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 280px;
+        height: 450px;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+      }
+      
+      .price {
+        color: grey;
+        font-size: 22px;
+      }
+      
+      .card button {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color:palevioletred;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+      }
+      
+      .card button:hover {
+        opacity: 0.7;
+      }
+      .checked {
+  color: orange;
+}
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.2rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+      
+      .col {
+          width: 21%;
+          margin-right: 30px;
+      }
+      .border{
+        border-radius:  
+        border: none;
+      }
+      h1{
+        padding-left: 380px ;
+      }
+      h2{
+        padding-left: 150px ;
+      }
+      .gap{
+        padding-left: 20px;
+      }
+      img{
+        width: 200px;
+      }
+      
+      .a{
+        
+        padding-left: 335px;
+        align-content: space-between;
+      }
+      .abc{
+        padding-left: 70px;
+        align-content: space-between;
+      }
+      .abcd{
+        padding-left: 70px;
+        align-content: space-between;
+      }
+      .abcde{
+        padding-left: 70px;
+        align-content: space-between;
+      }
+      .abcdef{
+        padding-left: 70px;
+        align-content: space-between;
+      }
+      
+        
+      
+    
+    </style>
+
+    
+  </head>
+  <body>
+    <a href="" style="padding: 50px;margin: 60px; text-decoration: none;"> <h5 style="color: red;text-decoration: none;">Home</h5></a>
+    <h1 style="padding: 0px;
+    margin: 0px;">Garden Kits</h1>
+    
+<!--     
+    <div class="album py-5 bg-body-tertiary">
+      <div class="container" > -->
+        <div class="a"> 
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="card">
+            <img src="./best sellers/i6.jpg" alt="Denim Jeans" style="width:100%;height: 235px;padding-top: 5px;padding-bottom: 5px;">
+            <h3> Basic Garden Essentials Kit for Home</h3>
+            <p class="price" style="margin-left: 10px;">$19.99</p>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+            
+            <p><button>Add to Cart</button></p>
+          </div>
+          <div class="card">
+            <img src="./best sellers/i6.jpg" alt="Denim Jeans" style="width:100%;height: 235px;padding-top: 5px;padding-bottom: 5px;">
+            <h3> Basic Garden Essentials Kit for Home</h3>
+            <p class="price" style="margin-left: 10px;">$19.99</p>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+            
+            <p><button>Add to Cart</button></p>
+          </div>
+        <div class="card">
+          <img src="./best sellers/i6.jpg" alt="Denim Jeans" style="width:100%;height: 235px;padding-top: 5px;padding-bottom: 5px;">
+          <h3> Basic Garden Essentials Kit for Home</h3>
+          <p class="price" style="margin-left: 10px;">$19.99</p>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+          
+          <p><button>Add to Cart</button></p>
+        </div>
+        <div class="card">
+          <img src="./best sellers/i6.jpg" alt="Denim Jeans" style="width:100%;height: 235px;padding-top: 5px;padding-bottom: 5px;">
+          <h3> Basic Garden Essentials Kit for Home</h3>
+          <p class="price" style="margin-left: 10px;">$19.99</p>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+          
+          <p><button>Add to Cart</button></p>
+        </div>
+        <div class="card">
+          <img src="./best sellers/i6.jpg" alt="Denim Jeans" style="width:100%;height: 235px;padding-top: 5px;padding-bottom: 5px;">
+          <h3> Basic Garden Essentials Kit for Home</h3>
+          <p class="price" style="margin-left: 10px;">$19.99</p>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+          
+          <p><button>Add to Cart</button></p>
+        </div>
+        <div class="card">
+          <img src="./best sellers/i6.jpg" alt="Denim Jeans" style="width:100%;height: 235px;padding-top: 5px;padding-bottom: 5px;">
+          <h3> Basic Garden Essentials Kit for Home</h3>
+          <p class="price" style="margin-left: 10px;">$19.99</p>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+          
+          <p><button>Add to Cart</button></p>
+        </div>
+
+        <div class="card">
+          <img src="./best sellers/i6.jpg" alt="Denim Jeans" style="width:100%;height: 235px;padding-top: 5px;padding-bottom: 5px;">
+          <h3> Basic Garden Essentials Kit for Home</h3>
+          <p class="price" style="margin-left: 10px;">$19.99</p>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+          
+          <p><button>Add to Cart</button></p>
+        </div>
+       
+        <div class="card">
+          <img src="./best sellers/i6.jpg" alt="Denim Jeans" style="width:100%;height: 235px;padding-top: 5px;padding-bottom: 5px;">
+          <h3> Basic Garden Essentials Kit for Home</h3>
+          <p class="price" style="margin-left: 10px;">$19.99</p>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+          
+          <p><button>Add to Cart</button></p> </div>
+      </div>
+    </div>
+    <!-- </div>
+  </div> -->
+  
+                                                               <!-- Best Sellers -->
+<center> 
+  <h5 style="text-align: center;">Best Sellers</h5></center>
+  <br>
+  
+  <!-- <div class="album py-5 bg-body-tertiary">
+    <div class="container" > -->
+      <div class="Bestsellers"> 
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="card">
+          <img src="./best sellers/i1.webp" alt="Denim Jeans" style="width:100% ;height: 235px;padding-top: 5px;padding-bottom: 5px;">
+          <h3> Basic Garden Essentials Kit for Home</h3>
+          <p class="price" style="margin-left: 10px;">$19.99</p>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+          <p><button>Add to Cart</button></p>
+        </div>
+        <div class="card">
+          <img src="./best sellers/flower1.webp" alt="Denim Jeans" style="width:100% ;height: 235px;padding-top: 5px;padding-bottom: 5px;">
+          <h3> Basic Garden Essentials Kit for Home</h3>
+          <p class="price" style="margin-left: 10px;">$19.99</p>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+          
+          <p><button>Add to Cart</button></p>
+        </div>
+        
+        <div class="card">
+          <img src="./best sellers/i3.jpg" alt="Denim Jeans" style="width:100% ;height: 235px;padding-top: 5px;padding-bottom: 5px;">
+          <h3> Basic Garden Essentials Kit for Home</h3>
+          <p class="price" style="margin-left: 10px;">$19.99</p>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+         
+          <p><button>Add to Cart</button></p>
+        </div>
+        <div class="card">
+          <img src="./best sellers/i4.webp" alt="Denim Jeans" style="width:100% ;height: 235px;padding-top: 5px;padding-bottom: 5px;">
+          <h3> Basic Garden Essentials Kit for Home</h3>
+          <p class="price" style="margin-left: 10px;">$19.99</p>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+         
+          <p><button>Add to Cart</button></p>
+        </div>
+        <div class="card">
+          <img src="./best sellers/i5.webp" alt="Denim Jeans" style="width:100% ;height: 235px;padding-top: 5px;padding-bottom: 5px;">
+          <h3> Basic Garden Essentials Kit for Home</h3>
+          <p class="price" style="margin-left: 10px;">$19.99</p>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+         
+          <p><button>Add to Cart</button></p>
+        </div>
+        <div class="card">
+          <img src="./best sellers/i6.jpg" alt="Denim Jeans" style="width:100% ;height: 235px;padding-top: 5px;padding-bottom: 5px;">
+          <h3> Basic Garden Essentials Kit for Home</h3>
+          <p class="price" style="margin-left: 10px;">$19.99</p>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+          
+          <p><button>Add to Cart</button></p>
+        </div>
+
+        <div class="card">
+          <img src="./best sellers/i7.webp" alt="Denim Jeans" style="width:100% ;height: 235px;padding-top: 5px;padding-bottom: 5px;">
+          <h3> Basic Garden Essentials Kit for Home</h3>
+          <p class="price" style="margin-left: 10px;">$19.99</p>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+          
+          <p><button>Add to Cart</button></p>
+        </div>
+        <div class="card">
+          <img src="./best sellers/i8.jpg" alt="Denim Jeans" style="width:100% ;height: 235px;padding-top: 5px;padding-bottom: 5px;">
+          <h3> Basic Garden Essentials Kit for Home</h3>
+          <p class="price" style="margin-left: 10px;">$19.99</p>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+          
+          <p><button>Add to Cart</button></p>
+        </div>
+        <div class="card">
+          <img src="./best sellers/i9.webp" alt="Denim Jeans" style="width:100% ;height: 235px;padding-top: 5px;padding-bottom: 5px;">
+          <h3> Basic Garden Essentials Kit for Home</h3>
+          <p class="price" style="margin-left: 10px;">$19.99</p>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+          
+          <p><button>Add to Cart</button></p>
+        </div>
+
+       
+        
+         
+        <div class="card">
+          <img src="./best sellers/i10.webp" alt="Denim Jeans" style="width:100% ;height: 235px;padding-top: 5px;padding-bottom: 5px;">
+          <h3> Basic Garden Essentials Kit for Home</h3>
+          <p class="price" style="margin-left: 10px;">$19.99</p>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+          
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>  
+    </div>
+    <!-- </div>
+  </div> -->
+  <br>
+  <div>
+                                                          <!--  Trending Collections    -->
+        
+  <div>
+    
+    <center> <h5 style="text-align: center; background-color: none;background-color: none;display: inline-block;" >Trending Collections</h5></center>
+    <br>
+<!-- 
+    <div style ="border: 0px;"   class="album py-5 bg-body-tertiary">
+      <div class="container"> -->
+        <div class="abcdef"> 
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"  >
+          <div class="col" >
+            <div class="card shadow-sm" style="border-radius: 100%; padding-left: 0px;width: 250px;height: 250px;">
+               
+                <img class="border" src="./best sellers/indoor1.webp" style="width: 250px;height: 250px;   ">
+               <a href="#" style=" text-decoration: none;color:#ff6b6b;padding-top: 10px;padding-left: 45px;"><h5> Indoor Plants</h5></a>
+              
+            </div>
+          </div>
+         
+          <div class="col">
+            <div class="card shadow-sm" style="border-radius: 100%; padding-left: 0px;width: 250px;height: 250px;">
+              <img class="border" src="./best sellers/flower1.webp" style="width: 250px;height: 250px;  ">
+              <a href="#" style=" text-decoration: none;color:#ff6b6b;padding-top: 10px;padding-left: 30px;"><h5> Flowering Plants</h5></a>
+
+              
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm" style="border-radius: 100%; padding-left: 0px;width: 250px;height: 250px;">
+              <img class="border" src="./best sellers/lucky1.webp" style="width: 250px;height: 250px; ;">
+              <a href="#" style=" text-decoration: none;color:#ff6b6b;padding-top: 10px;padding-left: 40px;"><h5> Lucky Bamboo</h5></a>
+
+              
+            </div>
+          </div>
+           
+          <div class="col">
+            <div class="card shadow-sm" style="border-radius: 100%; padding-left: 0px;width: 250px;height: 250px;">
+              <img class="border" src="./best sellers/cactus.webp" style="width: 250px;height: 250px; ">
+              <a href="#" style=" text-decoration: none;color:#ff6b6b;padding-top: 10px;padding-left: 20px;"><h5> Cactus and Succulents</h5></a>
+
+              
+            </div>
+          </div>
+          
+   
+         
+        </div>
+      </div>
+    </div>
+    <!-- </div>
+    <div> -->
+      <br>
+      <br>
+      <br>
+                                               <!--Save 40% with Gardening Solutions -->
+         
+  <!-- <div style ="border: 0px;"   class="album py-5 bg-body-tertiary">
+    <div class="container"> -->
+       <center>  <h5 style="text-align: center; background-color: none;" >Save 40% with Gardening Solutions</h5></center>
+       <br>
+      <div class="abcde"> 
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm" style="border-radius: 100%; padding-left: 0px;width: 250px;height: 250px;">
+             
+              <img class="border" src="./best sellers/i1.webp" style="width: 250px;height: 250px;; border-radius: 100%;">
+              <a href="#" style=" text-decoration: none;color:#ff6b6b;padding-top: 10px;padding-left: 10px;"><h5>Balcony and Terrace Garden</h5></a>
+             
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm" style="border-radius: 100%; padding-left: 0px;width: 250px;height: 250px;">
+            <img class="border" src="./best sellers/indoor1.webp" style="width: 250px;height: 250px;; border-radius: 100%;">
+            <a href="#" style=" text-decoration: none;color:#ff6b6b;padding-top: 10px;padding-left: 10px;"><h5>House Plants Packs</h5></a>
+             
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm" style="border-radius: 100%; padding-left: 0px;width: 250px;height: 250px;">
+            <img class="border" src="./best sellers/i5.webp" style="width: 250px;height: 250px;; border-radius: 100%;">
+            <a href="#" style=" text-decoration: none;color:#ff6b6b;padding-top: 10px;padding-left: 10px;"><h5> Kitchen Garden Kits</h5></a>
+             
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm" style="border-radius: 100%; padding-left: 0px;width: 250px;height: 250px;">
+            <img class="border" src="./best sellers/i9.webp" style="width: 250px;height: 250px;; border-radius: 100%;">
+            <a href="#" style=" text-decoration: none;color:#ff6b6b;padding-top: 10px;padding-left: 10px;"><h5> Indoor Plants Packs</h5></a>
+            
+          </div>
+        </div>
+ 
+       
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <!-- </div>
+  <div> -->
+
+                                                                                       <!--You may also need  -->
+
+     <center></center> 
+    <h5 style="text-align: center; background-color: none;" >You may also need</h5>
+  </center> 
+  <br>
+    <!-- <div style ="border: 0px;"   class="album py-5 bg-body-tertiary">
+      <div class="container"> -->
+    <div class="abcd">  
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm"  style="border-radius: 100%; padding-left: 0px;width: 250px;height: 250px;">
+               
+                <img class="border" src="./best sellers/i7.webp" style="width: 250px;height: 250px;">
+                <a href="#" style=" text-decoration: none;color:#ff6b6b;padding-top: 10px;padding-left: 10px;"><h5>Soil and Fertilizers</h5></a>
+              
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm" style="border-radius: 100%; padding-left: 0px;width: 250px;height: 250px;">
+              <img class="border" src="./best sellers/i8.jpg"  style="width: 250px;height: 250px;">
+              <a href="#" style=" text-decoration: none;color:#ff6b6b;padding-top: 10px;padding-left: 10px;"><h5>House Plants Packs</h5></a>
+
+               
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm" style="border-radius: 100%; padding-left: 0px;width: 250px;height: 250px;">
+              <img class="border" src="./best sellers/i9.webp"  style="width: 250px;height: 250px;">
+              <a href="#" style=" text-decoration: none;color:#ff6b6b;padding-top: 10px;padding-left: 10px;"><h5>Kitchen Garden Kits</h5></a>
+
+              
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm" style="border-radius: 100%; padding-left: 0px;width: 250px;height: 250px;">
+              <img class="border" src="./best sellers/i10.webp"  style="width: 250px;height: 250px;">
+              <a href="#" style=" text-decoration: none;color:#ff6b6b;padding-top: 10px;padding-left: 10px;"><h5>Indoor Plants Packs</h5></a>
+
+              
+            </div>
+          </div>
+   
+         
+        </div>
+      </div>
+    </div>
+  </div>
+     <br>
+     <br>
+     <br>
+
+    
+                                                                                      <!--Imported Winter Flower Bulbs -->
+ 
+ <center>                                                                                     
+    <h5 style="text-align: center; background-color: none;" >Imported Winter Flower Bulbs</h5>
+  </center>
+  <br>
+    <!-- <div style ="border: 0px;"   class="album py-5 bg-body-tertiary">
+      <div class="container">
+   -->
+   <div class="abc"> 
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"  >
+          <div class="col" >
+            <div class="card shadow-sm" style="border-radius: 100%; padding-left: 0px;width: 250px;height: 250px;">
+               
+                <img class="border" src="./best sellers/lucky1.webp" style="width: 250px;height: 250px; border-radius: 100%;">
+               <a href="#" style=" text-decoration: none;color:#ff6b6b;padding-top: 10px;padding-left: 10px;"><h5>Ranunculus Flower  Bulbs</h5></a>
+              
+            </div>
+          </div>
+         
+          <div class="col">
+            <div class="card shadow-sm" style="border-radius: 100%; padding-left: 0px;width: 250px;height: 250px;">
+              <img class="border" src="./best sellers/cactus.webp" style="width: 250px;height: 250px;  border-radius: 100%;">
+              <a href="#" style=" text-decoration: none;color:#ff6b6b;padding-top: 10px;padding-left: 20px;"><h5> Hyacinth Flower Bulbs</h5></a>
+
+              
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm" style="border-radius: 100%; padding-left: 0px;width: 250px;height: 250px;">
+              <img class="border" src="./best sellers/flower1.webp" style="width: 250px;height: 250px; border-radius: 100%;">
+              <a href="#" style=" text-decoration: none;color:#ff6b6b;padding-top: 10px;padding-left: px;"><h5> Tulip Flower Bulbs</h5></a>
+
+              
+            </div>
+          </div>
+        
+           
+          <div class="col">
+            <div class="card shadow-sm" style="border-radius: 100%; padding-left: 0px;width: 250px;height: 250px;">
+              <img class="border" src="./best sellers/indoor1.webp" style="width: 250px;height: 250px; border-radius: 100%;">
+              <a href="#" style=" text-decoration: none;color:#ff6b6b;padding-top: 10px;padding-left: 20px;"><h5> Daffodil Flower Bulbs</h5></a>
+            </div>
+          </div>
+              
+           
+        
+        </div>
+   
+      <br>
+      <br>
+      <br>
+      <br>
+      
+      
+                     <!--                                                                                         box  -->
+
+
+                     
+                     <button class="box"  style="background-color: #ff6b6b; width: 200px;height: 50px;margin-left: 600px;"><p class="color" style="font-size: 20px;padding-top: 5px;">View more</p></button>
+          
+         <br>
+         <br>      
+       <div class="gap">  
+        <h1 style="padding-top: 30px;margin-left: 200px; float: left;">About Garden Kits</h1>
+        <br><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+     <div>  <img style="width: 700px;height: 500px; border-radius: 10%; padding-right: 10px; float: left; background-image: 100%;" src="./best sellers/flower1.webp">
+      <p >Are you new to the world of gardening? Looking to create your little paradise, but don’t know where to begin? Find everything you need, easily put together in our Garden Kits. Our curated Garden Kits make growing fresh vegetables, herbs or flowers extremely easy.</p>
+      <p >Perfect for an urban gardener, our Garden Kits get you started with your very own home gardening journey. Putting together all you need, we provide seeds, pots and soil so that everything is available in one place. From vegetables with herbs, microgreens to flowers, hand-pick what you want to grow from our range.</p>
+      <p >It's such a nice convenience to have fresh herbs on hand when you're cooking up a storm in the kitchen.</p>
+      <p >All you need is a sunny window, a part of your patio or balcony, or a pair of grow lights. Using these you can turn in your home empty space into your new favourite spot — one brimming with rich plant life, your own private urban jungle, a green oasis.</p>
+      <p >Some of the exciting types of Garden Kits include:</p>
+      <br>
+      <p>1. ‘Microgreen seeds Kitchen Garden Pack’ or ‘Healthy Vegetable Grown at Home Kitchen Garden Pack’ if you are looking to grow fresh ingredients for your culinary adventures.</p>
+      <br>
+      <p>2. ‘Fresh Vegetable Seeds for Salad Recipe’ and the ‘Seeds to Grow Vegetables Used in Chinese Recipes’ if you are an oriental lover.</p>   
+    
+      </div>
+      <br>
+      <br>
+      <br>
+                                                                            <!--Herb garden kits  -->
+
+       <div class="gap">
+         <h2 style="padding-left: 500px;">Herb garden kits</h2>
+        <br>
+        <img style="width: 400px;height: 200px; border-radius: 10%; padding-right: 10px; float: left; background-image: 100%;" src="./best sellers/i1.webp">
+       <p style="padding-left: 110px; font-size: 25px; padding-top: 50px;" >Herb garden kits are a great way to grow your own herbs and spices in the comfort of your own home. Whether you're looking to add some fresh basil to your pasta dish or want to make some mint tea, these kits make it easy and fun.</p></div>
+        <br><br><br><br><br><br>
+         
+
+                                                                           <!--Vegetable garden kits  -->
+         <div class="gap">
+          <h2 style="padding-left: 500px;">Vegetable garden kits</h2>
+          <br>
+          
+          <img style="width: 400px;height: 200px; border-radius: 10%; padding-right: 10px; float: left; background-image: 100%;" src="./best sellers/i2.webp">
+         <p style="padding-left: 110px;font-size: 25px; padding-top: 50px" >Herb garden kits are a great way to grow your own herbs and spices in the comfort of your own home. Whether you're looking to add some fresh basil to your pasta dish or want to make some mint tea, these kits make it easy and fun.</p></div>
+          <br><br><br><br><br><br>
+                                                                             
+
+     
+                                                                                                     <!-- Indoor garden kits-->
+           <div class="gap">
+            <h2 style="padding-left: 500px;">Indoor garden kits</h2>
+            <br>
+            <img style="width: 400px;height: 200px; border-radius: 10%; padding-right: 10px; float: left; background-image: 100%;" src="./best sellers/i3.jpg">
+           <p style="padding-left: 110px;font-size: 25px; padding-top: 50px;" >Herb garden kits are a great way to grow your own herbs and spices in the comfort of your own home. Whether you're looking to add some fresh basil to your pasta dish or want to make some mint tea, these kits make it easy and fun.</p></div>
+            <br><br><br><br><br><br>
+                                                                                                       
+                                                                            <!-- Flower garden kits -->
+         <div class="gap">
+           <h2 style="padding-left: 500px;">Flower garden kits</h2>
+           <br>
+           <img style="width: 400px;height: 200px; border-radius: 10%; padding-right: 10px; float: left; background-image: 100%;" src="./best sellers/i4.webp">
+          <p  style="padding-left: 110px;font-size: 25px; padding-top: 50px;" >Herb garden kits are a great way to grow your own herbs and spices in the comfort of your own home. Whether you're looking to add some fresh basil to your pasta dish or want to make some mint tea, these kits make it easy and fun.</p></div>
+           <br><br><br><br><br><br>
+                                                                            <!-- Succulent garden kits -->
+           <div class="gap">
+             <h2 style="padding-left: 500px;">Succulent garden kits</h2>
+             <br>
+             <img style="width: 400px;height: 200px; border-radius: 10%; padding-right: 10px; float: left; background-image: 100%;" src="./best sellers/i5.webp">
+            <p  style="padding-left: 110px; font-size: 25px; padding-top: 50px;" >Herb garden kits are a great way to grow your own herbs and spices in the comfort of your own home. Whether you're looking to add some fresh basil to your pasta dish or want to make some mint tea, these kits make it easy and fun.</p></div>
+             <br><br><br><br><br><br>
+                                                                                                    <!-- Indoor garden kits-->
+            <div class="gap">
+              <h2 style="padding-left: 500px;">Raised garden bed kits</h2>
+              <br>
+              <img style="width: 400px;height: 200px; border-radius: 10%; padding-right: 10px; float: left; background-image: 100%;" src="./best sellers/i6.jpg">
+             <p  style="padding-left: 110px; font-size: 25px; padding-top: 50px;" >Herb garden kits are a great way to grow your own herbs and spices in the comfort of your own home. Whether you're looking to add some fresh basil to your pasta dish or want to make some mint tea, these kits make it easy and fun.</p></div>
+              <br><br><br><br><br><br>
+                                                                                                         
+                                                                              <!-- Flower garden kits -->
+           <div class="gap">
+             <h2 style="padding-left: 500px;"> Hydroponic garden kits</h2>
+             <br>
+             <img style="width: 400px;height: 200px; border-radius: 10%; padding-right: 10px; float: left; background-image: 100%;" src="./best sellers/i7.webp">
+            <p style="padding-left: 110px; font-size: 25px; padding-top: 50px;" >Herb garden kits are a great way to grow your own herbs and spices in the comfort of your own home. Whether you're looking to add some fresh basil to your pasta dish or want to make some mint tea, these kits make it easy and fun.</p></div>
+             <br><br><br><br><br><br>
+                                                                              <!-- Succulent garden kits -->
+             <div class="gap">
+               <h2 style="padding-left: 500px;">Fairy garden kits</h2>
+               <br>
+               <img style="width: 400px;height: 200px; border-radius: 10%; padding-right: 10px; float: left; background-image: 100%;" src="./best sellers/i8.jpg">
+              <p  style="padding-left: 110px; font-size: 25px; padding-top: 50px;" >Herb garden kits are a great way to grow your own herbs and spices in the comfort of your own home. Whether you're looking to add some fresh basil to your pasta dish or want to make some mint tea, these kits make it easy and fun.</p></div>
+               <br><br><br><br><br><br>
+                                                                                                  <!-- Indoor garden kits-->
+               <div class="gap">
+                 <h2 style="padding-left: 500px;">Kids garden kits</h2>
+                 <br>
+                 <img style="width: 400px;height: 200px; border-radius: 10%; padding-right: 10px; float: left; background-image: 100%;" src="./best sellers/i9.webp">
+                <p  style="padding-left: 110px;font-size: 25px; padding-top: 50px;" >Herb garden kits are a great way to grow your own herbs and spices in the comfort of your own home. Whether you're looking to add some fresh basil to your pasta dish or want to make some mint tea, these kits make it easy and fun.</p></div>
+                 <br><br><br><br><br><br>
+                                                                                                            
+                                                                                 <!-- Flower garden kits -->
+              <div class="gap">
+                <h2 style="padding-left: 500px;">Herb seed starter kits</h2>
+                <br>
+                <img style="width: 400px;height: 200px; border-radius: 10%; padding-right: 10px; float: left; background-image: 100%;" src="./best sellers/i10.webp">
+               <p style="padding-left: 110px; font-size: 25px; padding-top: 50px;" >Herb garden kits are a great way to grow your own herbs and spices in the comfort of your own home. Whether you're looking to add some fresh basil to your pasta dish or want to make some mint tea, these kits make it easy and fun.</p></div>
+                <br><br><br><br><br><br>
+                                                                                 <!-- Succulent garden kits -->
+                <div class="gap">
+                  <h2 style="padding-left: 500px;"> Bonsai garden kits</h2>
+                  <br>
+                  <img style="width: 400px;height: 200px; border-radius: 10%; padding-right: 10px; float: left; background-image: 100%;" src="Bonsai garden kits.jpg">
+                 <p  style="padding-left: 110px;font-size: 25px; padding-top: 50px" >Herb garden kits are a great way to grow your own herbs and spices in the comfort of your own home. Whether you're looking to add some fresh basil to your pasta dish or want to make some mint tea, these kits make it easy and fun.</p></div>
+                  <br><br><br><br><br><br>
+                                                                            <!--Organic garden kits  -->
+                                                                                                  <!-- Indoor garden kits-->
+        <div class="gap">
+          <h2 style="padding-left: 500px;"> Organic garden kits</h2>
+          <br>
+          <img style="width: 400px;height: 200px; border-radius: 10%; padding-right: 10px; float: left; background-image: 100%;" src="Organic garden kits.jpg">
+         <p style="padding-left: 110px; font-size: 25px; padding-top: 50px;" >Herb garden kits are a great way to grow your own herbs and spices in the comfort of your own home. Whether you're looking to add some fresh basil to your pasta dish or want to make some mint tea, these kits make it easy and fun.</p></div>
+          <br><br><br><br><br><br>
+                                                                                                     
+                                                                          <!-- Flower garden kits -->
+       <div class="gap">
+         <h2 style="padding-left: 500px;"> Culinary herb garden kits</h2>
+         <br>
+         <img style="width: 400px;height: 200px; border-radius: 10%; padding-right: 10px; float: left; background-image: 100%;" src="Culinary herb garden kits.jpg">
+        <p style="padding-left: 110px; font-size: 25px; padding-top: 50px;" >Herb garden kits are a great way to grow your own herbs and spices in the comfort of your own home. Whether you're looking to add some fresh basil to your pasta dish or want to make some mint tea, these kits make it easy and fun.</p></div>
+         <br><br><br><br><br><br>
+                                                                          <!-- Succulent garden kits -->
+         <div class="gap">
+           <h2 style="padding-left: 500px;"> Butterfly garden kits</h2>
+           <br>
+           <img style="width: 400px;height: 200px; border-radius: 10%; padding-right: 10px; float: left; background-image: 100%;" src="Butterfly garden kits.jpg">
+          <p style="padding-left: 110px; font-size: 25px; padding-top: 50px;" >Herb garden kits are a great way to grow your own herbs and spices in the comfort of your own home. Whether you're looking to add some fresh basil to your pasta dish or want to make some mint tea, these kits make it easy and fun.</p></div>
+           <br><br><br><br><br><br>
+                                                                                              <!-- Indoor garden kits-->
+           <div class="gap">
+             <h2 style="padding-left: 500px;"> Windowsill garden kits</h2>
+             <br>
+             <img style="width: 400px;height: 200px; border-radius: 10%; padding-right: 10px; float: left; background-image: 100%;" src="Windowsill garden kits.jpg">
+            <p style="padding-left: 110px; font-size: 25px; padding-top: 50px" >Herb garden kits are a great way to grow your own herbs and spices in the comfort of your own home. Whether you're looking to add some fresh basil to your pasta dish or want to make some mint tea, these kits make it easy and fun.</p></div>
+             <br><br><br><br><br><br>
+                                                                                                        
+                                                                             <!-- Flower garden kits -->
+          <div class="gap">
+            <h2 style="padding-left: 500px;"> Herb garden starter kits</h2>
+            <br>
+            <img style="width: 400px;height: 200px; border-radius: 10%; padding-right: 10px; float: left; background-image: 100%;" src="Herb garden starter kits.jpg">
+           <p style="padding-left: 110px;font-size: 25px; padding-top: 50px;" >Herb garden kits are a great way to grow your own herbs and spices in the comfort of your own home. Whether you're looking to add some fresh basil to your pasta dish or want to make some mint tea, these kits make it easy and fun.</p></div>
+            <br><br><br><br><br><br>
+                                                                             <!-- Succulent garden kits -->
+            <div class="gap">
+              <h2 style="padding-left: 500px;"> Flower seed starter kits</h2>
+              <br>
+              <img style="width: 400px;height: 200px; border-radius: 10%; padding-right: 10px; float: left; background-image: 100%;" src="Flower seed starter kits.jpg">
+             <p  style="padding-left: 110px; font-size: 25px; padding-top: 50px;" >Herb garden kits are a great way to grow your own herbs and spices in the comfort of your own home. Whether you're looking to add some fresh basil to your pasta dish or want to make some mint tea, these kits make it easy and fun.</p></div>
+              <br><br><br><br><br><br>
+                                                                               <!-- Garden tool kits -->
+          <div class="gap">
+           <h2 style="padding-left: 500px;"> Garden tool kits</h2>
+           <br>
+           <img style="width: 400px;height: 200px; border-radius: 10%; padding-right: 10px; float: left; background-image: 100%;" src="Garden tool kits.jpg">
+          <p style="padding-left: 110px; font-size: 25px; padding-top: 50px;" >Herb garden kits are a great way to grow your own herbs and spices in the comfort of your own home. Whether you're looking to add some fresh basil to your pasta dish or want to make some mint tea, these kits make it easy and fun.</p></div>
+           <br><br><br><br><br><br>
+                                                                                                      
+                                                                           <!-- Flower garden kits -->
+        <div class="gap">
+          <h2 style="padding-left: 500px;"> Pollinator garden kits</h2>
+          <br>
+          <img style="width: 400px;height: 200px; border-radius: 10%; padding-right: 10px; float: left; background-image: 100%;" src="Pollinator garden kits.jpg">
+         <p style="padding-left: 110px; font-size: 25px; padding-top: 50px;" >Herb garden kits are a great way to grow your own herbs and spices in the comfort of your own home. Whether you're looking to add some fresh basil to your pasta dish or want to make some mint tea, these kits make it easy and fun.</p></div>
+          <br><br><br><br><br><br>
+                                                                           <!-- Succulent garden kits -->
+          <div class="gap">
+            <h2 style="padding-left: 500px;">Seed starting kits</h2>
+            <br>
+            <img style="width: 400px;height: 200px; border-radius: 10%; padding-right: 10px; float: left; background-image: 100%;" src="Seed starting kits.jpg">
+           <p  style="padding-left: 110px; font-size: 25px; padding-top: 50px;">Herb garden kits are a great way to grow your own herbs and spices in the comfort of your own home. Whether you're looking to add some fresh basil to your pasta dish or want to make some mint tea, these kits make it easy and fun.</p></div>
+            <br><br><br><br><br><br>
+                                                                     
+<script src="bootstrap.bundle.min.js"></script>
+
+   
+
+    </body>
+</html>
